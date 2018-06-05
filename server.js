@@ -37,7 +37,7 @@ app.use(bodyParser.json());
 
 
 
-app.get('/', (req, res) => { res.send(database.users) })
+app.get('/', (req, res) => { res.send('it is working!') })
 app.post('/signin', signin.handleSignin(db, bcrypt))
 app.post('/register', (req, res) => { register.handleRegister(req, res, db, bcrypt) }) 
 {/* Displays user id number based on rank, after login */}
